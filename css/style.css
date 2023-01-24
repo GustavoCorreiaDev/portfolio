@@ -1,0 +1,98 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Merriweather', serif; */
+
+:root{
+    --c1: #164773;
+    --c2: rgb(230, 25, 25);
+    --ff1: 'Merriweather', serif;
+    --ff2: 'Inconsolata', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+.bck{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+    width: 100vw;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tt {
+    font-family: var(--ff1);
+    color: var(--c1);
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.tt-sp {
+    color: var(--c2);
+}
+
+.lst{
+    font-family: var(--ff2);
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
+    border: 10px 10px;
+}
+
+.lst-link{
+    font-weight: 100;
+    text-decoration: none;
+}
+.lst-link:hover{
+    font-weight: bolder;
+    color: var(--c2);
+    background-color: yellow; /*TROCAR ESSA COR HORROROSA SÓ BOTEI PARA NOTAR A DIFERENÇA*/
+}
+
+.btn {
+    background-color: var(rgb(230, 25, 25));
+    text-decoration: none;
+    background-color: var(--c2);
+    padding: 5px;
+    border-style: solid;
+    border-color: yellow;
+}
+.btn:hover{
+    color: var(--c2);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
