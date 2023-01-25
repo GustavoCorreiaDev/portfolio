@@ -37,6 +37,7 @@ font-family: 'Merriweather', serif; */
     color: var(--c1);
     font-size: 45px;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 .tt-sp {
@@ -58,20 +59,50 @@ font-family: 'Merriweather', serif; */
 .lst-link:hover{
     font-weight: bolder;
     color: var(--c2);
-    background-color: yellow; /*TROCAR ESSA COR HORROROSA SÓ BOTEI PARA NOTAR A DIFERENÇA*/
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 .btn {
-    background-color: var(rgb(230, 25, 25));
+    background-color: var(--c1);
+    color: white;
     text-decoration: none;
-    background-color: var(--c2);
     padding: 5px;
     border-style: solid;
-    border-color: yellow;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
 }
-.btn:hover{
+
+.btn:hover {
+    border-color: var(--c1);
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+.main {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.greating {
+    color: white;
+    font-family: var(--ff2);
+    font-size: 25px;
+}
+.name {
+    color: var(--c1);
+    font-size: 70px;
+    font-family: var(--ff1);
+}
+.name-sp {
     color: var(--c2);
-    text-decoration: none;
+}
+
+.form {
+    border-style: solid;
+    margin: 10px;
 }
 
 
