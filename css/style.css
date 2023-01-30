@@ -15,12 +15,11 @@ font-family: 'Merriweather', serif; */
     ;
 }
 
-.bck{
+body {
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;  
-    width: 100vw;
+    background-attachment: fixed;
 }
 
 .nav-bar {
@@ -81,9 +80,10 @@ font-family: 'Merriweather', serif; */
 }
 
 .main {
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    /*position: absolute;*/
+    margin-top: 200px;
+    margin-left: 150px;
+    max-width: 80%;
 }
 
 .greating {
@@ -100,30 +100,60 @@ font-family: 'Merriweather', serif; */
     color: var(--c2);
 }
 
-.form {
-    border-style: solid;
-    margin: 10px;
+.main-down{
+    max-width: 550px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-style: groove;
+    border-radius: 25px;
+    color: var(--c2);
 }
 
+.down {
+    font-family: var(--ff2);
+    margin-left: 10px;
+}
+.a-down {
+    font-family: var(--ff1);
+    text-decoration: none;
+    border-radius: 25px;
+    border: solid;
+    padding: 8px;
+    background-color: var(--c1);
+    color: white;
+}
 
+.a-down:hover{
+    transition: 1s;
+    background-color: var(--c2);
+}
 
+.sm{
+    color: white;
+    margin-top: 200px;
+    height: 100vh;
+    margin-left: 150px;
+    max-width: 80%;
+}
 
+.tt-sm{
+    color: var(--c1);
+    font-size: 60px;
+    font-family: var(--ff1);
+    color: var;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.txt-sm{
+    font-family: var(--ff2);
+    font-size: 30px;
+    line-height: 3rem;
+}
 
+.pjt {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
