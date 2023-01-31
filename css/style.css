@@ -154,6 +154,41 @@ body {
     line-height: 3rem;
 }
 
-.pjt {
-    
+.pjt{
+    max-width: 80%;
+    height: 100vh;
+    margin-left: 150px;
+    padding-top: 150px;
 }
+
+.tt-pjt {
+    text-align: center;
+    font-family: var(--ff1);
+    color: var(--c1);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cards-pjt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.card-pjt{
+    background-color: black;
+    height: 365px;
+    width: 335px;
+    border: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+ .card-pjt i{
+    font-size: 50px;
+    color: var(--c1);
+ }
