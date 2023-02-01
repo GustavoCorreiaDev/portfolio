@@ -64,6 +64,7 @@ body {
 
 .btn {
     background-color: var(--c1);
+    font-family: var(--ff2);
     color: white;
     text-decoration: none;
     padding: 5px;
@@ -80,7 +81,6 @@ body {
 }
 
 .main {
-    /*position: absolute;*/
     margin-top: 200px;
     margin-left: 150px;
     max-width: 80%;
@@ -169,45 +169,45 @@ body {
     margin-bottom: 20px;
 }
 
-.cards-pjt{
+.box-card {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 400px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.card-pjt{
-    background-color: black;
-    height: 365px;
+.cards {
+    background-color: red;
     width: 335px;
-    border: 20px;
-    border-radius: 20px 0px 20px 0px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+    height: 465px;
+    border-radius: 40px;
 }
- .card-pjt i{
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    color: var(--c1);
- }
 
- .card-pjt a{
+.fa-regular {
+    color: var(--c1);
+}
+
+.card-p {
+    color: white;
+    font-family: var(--ff2);
+}
+
+#ibtn {
     background-color: var(--c1);
     font-family: var(--ff2);
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
     color: white;
- }
+    padding: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
 
- #mf{
-    background-image: url(../images/party.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#ibtn:hover {
+    font-weight: bolder;
+    color: var(--c1);
+    border-color: var(--c1);
+    background-color: transparent;
+    transition-duration: 1s;
 }
