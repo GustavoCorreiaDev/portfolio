@@ -182,13 +182,32 @@ body {
     height: 365px;
     width: 335px;
     border: 20px;
-    border-radius: 20px;
+    border-radius: 20px 0px 20px 0px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
  .card-pjt i{
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
     font-size: 50px;
     color: var(--c1);
  }
+
+ .card-pjt a{
+    background-color: var(--c1);
+    font-family: var(--ff2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+ }
+
+ #mf{
+    background-image: url(../images/party.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
