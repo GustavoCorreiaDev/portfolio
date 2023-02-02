@@ -1,213 +1,36 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Merriweather', serif; */
-
 :root{
-    --c1: #164773;
-    --c2: rgb(230, 25, 25);
-    --ff1: 'Merriweather', serif;
-    --ff2: 'Inconsolata', monospace;
+    --c1: #164773; /*cor principal*/
+    --c2: #d62323; /*cor secundaria*/
+    --ff1: 'Merriweather', serif; /*font-g*/
+    --ff2: 'Inconsolata', monospace; /*font-p*/
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    font-family: var(--ff2);
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    ;
-}
-
-body {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 45px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.tt {
-    font-family: var(--ff1);
-    color: var(--c1);
-    font-size: 45px;
-    letter-spacing: 3px;
-    cursor: pointer;
-}
-
-.tt-sp {
-    color: var(--c2);
-}
-
-.lst{
-    font-family: var(--ff2);
-    display: inline-block;
-    padding: 15px;
-    list-style: none;
-    border: 10px 10px;
-}
-
-.lst-link{
-    font-weight: 100;
     text-decoration: none;
-}
-.lst-link:hover{
-    font-weight: bolder;
-    color: var(--c2);
-    transform: scale(1.1);
-    transition-duration: 1s;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
 }
 
-.btn {
-    background-color: var(--c1);
-    font-family: var(--ff2);
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.btn:hover {
-    border-color: var(--c1);
-    transition-duration: 1s;
-    transform: scale(1.1);
-}
-
-.main {
-    margin-top: 200px;
-    margin-left: 150px;
-    max-width: 80%;
-}
-
-.greating {
-    color: white;
-    font-family: var(--ff2);
-    font-size: 25px;
-}
-.name {
-    color: var(--c1);
-    font-size: 70px;
-    font-family: var(--ff1);
-}
-.name-sp {
-    color: var(--c2);
-}
-
-.main-down{
-    max-width: 550px;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    border-style: groove;
-    border-radius: 25px;
-    color: var(--c2);
-}
-
-.down {
-    font-family: var(--ff2);
-    margin-left: 10px;
-}
-.a-down {
-    font-family: var(--ff1);
-    text-decoration: none;
-    border-radius: 25px;
-    border: solid;
-    padding: 8px;
-    background-color: var(--c1);
+*::selection{
+    background: var(--c1);
     color: white;
 }
 
-.a-down:hover{
-    transition: 1s;
-    background-color: var(--c2);
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-.sm{
-    color: white;
-    margin-top: 200px;
-    height: 100vh;
-    margin-left: 150px;
-    max-width: 80%;
+html::-webkit-scrollbar{
+    width: 1.4rem;
 }
 
-.tt-sm{
-    color: var(--c1);
-    font-size: 60px;
-    font-family: var(--ff1);
-    color: var;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.txt-sm{
-    font-family: var(--ff2);
-    font-size: 30px;
-    line-height: 3rem;
-}
-
-.pjt{
-    max-width: 80%;
-    height: 100vh;
-    margin-left: 150px;
-    padding-top: 150px;
-}
-
-.tt-pjt {
-    text-align: center;
-    font-family: var(--ff1);
-    color: var(--c1);
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.box-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.cards {
-    background-color: red;
-    width: 335px;
-    height: 465px;
-    border-radius: 40px;
-}
-
-.fa-regular {
-    color: var(--c1);
-}
-
-.card-p {
-    color: white;
-    font-family: var(--ff2);
-}
-
-#ibtn {
-    background-color: var(--c1);
-    font-family: var(--ff2);
-    color: white;
-    padding: 5px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#ibtn:hover {
-    font-weight: bolder;
-    color: var(--c1);
-    border-color: var(--c1);
-    background-color: transparent;
-    transition-duration: 1s;
+html::-webkit-scrollbar-track{
+    background: black;
 }
