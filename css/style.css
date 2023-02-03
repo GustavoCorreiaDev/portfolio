@@ -42,6 +42,33 @@ html::-webkit-scrollbar-thumb{
 body {
     background: black;
     overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: var(--c1);
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.btn i {
+    padding: 0  .5rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background: var(--c2);
+    scale: 0.95;
+    font-weight: bolder;
 }
 
 header {
@@ -119,6 +146,33 @@ header .nav-bar ul li a:hover {
     display: none;
 }
 
+.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0rem 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.home span {
+    color: var(--c1);
+}
+
+.home p {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;    
+}
+
 
 
 
@@ -163,6 +217,9 @@ header .nav-bar ul li a:hover {
         font-size: 55%;
         overflow-x: hidden;
     }
+    .home {
+        padding: 1rem 4rem;
+    }
 }
 
 @media (max-width:991px) {
@@ -175,6 +232,9 @@ header .nav-bar ul li a:hover {
     }
     header.toggle{
         left: 0%;
+    }
+    body{
+        padding: 0;
     }
 }
 
