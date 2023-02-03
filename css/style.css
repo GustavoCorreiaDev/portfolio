@@ -34,3 +34,158 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-track{
     background: black;
 }
+
+html::-webkit-scrollbar-thumb{
+    background: var(--c1);
+}
+
+body {
+    background: black;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: var(--c1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .photo-header img {
+    height: 17rem;
+    width: 17rem; 
+    border-radius: 50%;
+    object-fit: cover;
+    border-bottom: 1rem;
+    border: .7rem solid var(--c2);
+}
+
+header .photo-header .name-header {
+    font-size: 3.5rem;
+    color: white;
+}
+
+header .photo-header .name-header {
+    font-size: 3.5rem;
+    color: white;
+}
+
+header .photo-header .text-header {
+    font-size: 2rem;
+    color: white;
+}
+
+header .nav-bar {
+    width: 100%;
+}
+
+header .nav-bar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .nav-bar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: white;
+    color: var(--c1);
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .nav-bar ul li a:hover {
+    background: var(--c2);
+    scale: 0.95;
+    font-weight: bolder;
+}
+
+#i-menu {
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: var(--c1);
+    color: var(--c2);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:991px) {
+    header{
+        left: -120%;
+    }
+
+    #i-menu {
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    header{
+        width: 100vw;
+    }
+}
