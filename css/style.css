@@ -71,6 +71,19 @@ section{
     font-weight: bolder;
 }
 
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid white;
+    color: white;
+}
+
+.heading span {
+    color: var(--c2);
+}
+
 header {
     position: fixed;
     top: 0; left: 0;
@@ -173,6 +186,55 @@ header .nav-bar ul li a:hover {
     padding: 1rem 0;    
 }
 
+.sobreMim .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+}
+
+.sobreMim .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.sobreMim .row .info h3{
+    font-size: 2rem;
+    color: var(--c1);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.sobreMim .row .info span{
+    color: var(--c2);
+    padding: 0 .5rem;
+}
+
+.sobreMim .row .counter {
+    flex 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobreMim .row .counter .box{
+    width: 20rem;
+    background: var(--c1);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+.sobreMim .row .counter .box span{
+    font-size: 4rem;
+    color: var(--c2);
+}
+
+.sobreMim .row .counter .box h3{
+    font-size: 2rem;
+    color: white;
+}
 
 
 
@@ -247,5 +309,13 @@ header .nav-bar ul li a:hover {
 @media (max-width:400px) {
     header{
         width: 100vw;
+    }
+
+    .heading{
+        margin: 0 3rem;
+    }
+
+    .sobreMim .row .counter .box{
+        width: 100%;
     }
 }
