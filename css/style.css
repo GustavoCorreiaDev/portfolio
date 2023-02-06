@@ -13,7 +13,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all 0.2s linear;
 }
 
@@ -236,7 +235,103 @@ header .nav-bar ul li a:hover {
     color: white;
 }
 
+.projetos .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
 
+.projetos .box-container .box {
+    width: 20rem;
+    height: 26rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projetos .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projetos .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+.contato .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    margin-bottom: 0rem;
+}
+
+.contato .row form{
+    flex: 1 1 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contato .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: white;
+    color: blue;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contato .row form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contato .row form .textArea {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: white;
+    color: blue;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+
+.contato .row .content .title {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contato .row .content .title span {
+    color: var(--c2);
+}
+
+.contato .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contato .row .content .info i{
+    padding-right: 1rem;
+    color: var(--c1);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
 
 
 
@@ -282,6 +377,9 @@ header .nav-bar ul li a:hover {
     .home {
         padding: 1rem 4rem;
     }
+    .projetos .box-container{
+        width: 100%;
+    }
 }
 
 @media (max-width:991px) {
@@ -304,6 +402,10 @@ header .nav-bar ul li a:hover {
     html{
         font-size: 50%;
     }
+    .projetos .box-container .box {
+        min-width: 60%;
+    }
+
 }
 
 @media (max-width:400px) {
@@ -318,4 +420,13 @@ header .nav-bar ul li a:hover {
     .sobreMim .row .counter .box{
         width: 100%;
     }
+
+    .projetos .box-container .box {
+        width: 100%;
+    }
+
+    .contato .row form{
+        margin: 3rem 0;
+    }
 }
+
