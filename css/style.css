@@ -212,7 +212,7 @@ header .nav-bar ul li a:hover {
 }
 
 .sobreMim .row .counter {
-    flex 1 1 48rem;
+    flex: 1 1 48rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -253,7 +253,6 @@ header .nav-bar ul li a:hover {
 
 .projetos .box-container .box img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
