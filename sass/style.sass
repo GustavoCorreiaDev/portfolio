@@ -1,0 +1,323 @@
+:root
+  --c1: #164773 /* cor principal */
+  --c2: #d62323 /* cor secundaria */
+  --ff1: 'Merriweather', serif /* font-g */
+  --ff2: 'Inconsolata', monospace /* font-p */
+
+*
+  font-family: var(--ff2)
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+  text-decoration: none
+  outline: none
+  border: none
+  transition: all 0.2s linear
+
+*::selection
+  background: var(--c1)
+  color: white
+
+html
+  font-size: 62.5%
+  overflow-x: hidden
+
+html::-webkit-scrollbar
+  width: 1.4rem
+
+html::-webkit-scrollbar-track
+  background: black
+
+html::-webkit-scrollbar-thumb
+  background: var(--c1)
+
+body
+  background: black
+  overflow-x: hidden
+  padding-left: 35rem
+
+section
+  min-height: 100vh
+  padding: 1rem
+
+.btn
+  padding: .7rem 3rem
+  background: var(--c1)
+  color: white
+  cursor: pointer
+  margin-top: 1rem
+  font-size: 2rem
+  border-radius: 2rem
+
+.btn i
+  padding: 0 .5rem
+  font-size: 1.5rem
+
+.btn:hover
+  background: var(--c2)
+  transform: scale(0.95)
+  font-weight: bolder
+
+.heading
+  text-align: center
+  margin: 0 6rem
+  font-size: 4rem
+  padding: 1rem
+  border-bottom: .1rem solid white
+  color: white
+
+.heading span
+  color: var(--c2)
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1000
+  height: 100%
+  width: 35rem
+  background: var(--c1)
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-flow: column
+  text-align: center
+
+header .photo-header img
+  height: 17rem
+  width: 17rem
+  border-radius: 50%
+  object-fit: cover
+  border-bottom: 1rem
+  border: .7rem solid var(--c2)
+
+header .photo-header .name-header
+  font-size: 3.5rem
+  color: white
+
+header .photo-header .text-header
+  font-size: 2rem
+  color: white
+
+header .nav-bar
+  width: 100%
+
+header .nav-bar ul
+  list-style: none
+  padding: 1rem 3rem
+
+header .nav-bar ul li a
+  display: block
+  padding: 1rem
+  margin: 1.5rem 0
+  background: white
+  color: var(--c1)
+  font-size: 2rem
+  border-radius: 5rem
+
+header .nav-bar ul li a:hover
+  background: var(--c2)
+  transform: scale(0.95)
+  font-weight: bolder
+
+#i-menu
+  position: fixed
+  top: 2rem
+  right: 2rem
+  background: var(--c1)
+  color: var(--c2)
+  cursor: pointer
+  font-size: 2.5rem
+  padding: 1rem 1.5rem
+  z-index: 1000
+  display: none
+
+.home
+  display: flex
+  flex-flow: column
+  justify-content: center
+  padding: 0rem 15rem
+
+.home h3
+  font-size: 2.5rem
+  color: var(--c2)
+
+.home h1
+  font-size: 5rem
+  color: white
+
+.home span
+  color: var(--c1)
+
+.home p
+  font-size: 2rem
+  color: white
+  padding: 1rem 0
+
+.sobreMim .row
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  padding: 1rem 0rem
+
+.sobreMim .row .info
+  flex: 1 1 48rem
+  padding: 2rem 1rem
+  padding-left: 6rem
+
+.sobreMim .row .info h3
+  font-size: 2rem
+  color: var(--c1)
+  padding: 1rem 0
+  font-weight: normal
+
+.sobreMim .row .info span
+  color: var(--c2)
+  padding: 0 .5rem
+
+.sobreMim .row .counter
+  flex: 1 1 48rem
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+.sobreMim .row .counter .box
+  width: 20rem
+  background: var(--c1)
+  text-align: center
+  padding: 2rem
+  margin: 2rem
+
+.sobreMim .row .counter .box span
+  font-size: 4rem
+  color: var(--c2)
+
+.sobreMim .row .counter .box h3
+  font-size: 2rem
+  color: white
+
+.projetos .box-container
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  padding: 2rem 0
+
+.projetos .box-container .box
+  width: 20rem
+  height: 26rem
+  margin: 2rem
+  overflow: hidden
+  cursor: pointer
+
+.projetos .box-container .box img
+  width: 100%
+  object-fit: cover
+
+.projetos .box-container .box:hover img
+  transform: scale(1.2)
+
+.contato .row
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.contato .row .content
+  flex: 1 1 30rem
+  padding: 4rem
+  margin-bottom: 0rem
+
+.contato .row form
+  flex: 1 1 30rem
+  padding: 2rem
+  margin: 2rem
+  margin-bottom: 4rem
+
+.contato .row form .box
+  padding: 1.5rem
+  margin: 1rem 0
+  background-color: white
+  color: blue
+  text-transform: none
+  font-size: 1.7rem
+  width: 100%
+
+.contato .row form .box::placeholder
+  text-transform: capitalize
+
+.contato .row form .textArea
+  padding: 1.5rem
+  margin: 1rem 0
+  background-color: white
+  color: blue
+  text-transform: none
+  font-size: 1.7rem
+  width: 100%
+  height: 15rem
+  resize: none
+
+.contato .row .content .title
+  color: white
+  font-size: 3rem
+  padding-bottom: 2rem
+
+.contato .row .content .title span
+  color: var(--c2)
+
+.contato .row .content .info h3
+  display: flex
+  align-items: center
+
+.contato .row .content .info h3 a
+  text-decoration: none
+  color: white
+  font-size: 2rem
+  padding: 1rem 0
+  font-weight: normal
+
+.contato .row .content .info i
+  padding-right: 1rem
+  color: var(--c1)
+  font-size: 3rem
+  padding-bottom: 2rem
+
+/* media queries */
+
+@media (max-width: 1200px)
+  html
+    font-size: 55%
+    overflow-x: hidden
+  .home
+    padding: 1rem 4rem
+  .projetos .box-container
+    width: 100%
+
+@media (max-width: 991px)
+  header
+    left: -120%
+  #i-menu
+    display: block
+  header.toggle
+    left: 0%
+  body
+    padding: 0
+
+@media (max-width: 768px)
+  html
+    font-size: 50%
+  .projetos .box-container .box
+    min-width: 60%
+
+@media (max-width: 400px)
+  header
+    width: 100vw
+  .heading
+    margin: 0 3rem
+  .sobreMim .row .counter .box
+    width: 100%
+  .projetos .box-container .box
+    width: 100%
+  .contato .row form
+    margin: 3rem 0
