@@ -1,8 +1,8 @@
 :root {
-  --c1: #164773 /* cor principal */;
-  --c2: #d62323 /* cor secundaria */;
-  --ff1: "Merriweather", serif /* font-g */;
-  --ff2: "Inconsolata", monospace /* font-p */;
+  --c1: #164773; /* cor principal */
+  --c2: #d62323; /* cor secundaria */
+  --ff1: "Merriweather", serif; /* font-g */
+  --ff2: "Inconsolata", monospace; /* font-p */
 }
 
 * {
@@ -15,7 +15,6 @@
   border: none;
   transition: all 0.2s linear;
 }
-
 *::selection {
   background: var(--c1);
   color: white;
@@ -25,15 +24,12 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-
 html::-webkit-scrollbar {
   width: 1.4rem;
 }
-
 html::-webkit-scrollbar-track {
   background: black;
 }
-
 html::-webkit-scrollbar-thumb {
   background: var(--c1);
 }
@@ -58,12 +54,10 @@ section {
   font-size: 2rem;
   border-radius: 2rem;
 }
-
 .btn i {
   padding: 0 0.5rem;
   font-size: 1.5rem;
 }
-
 .btn:hover {
   background: var(--c2);
   transform: scale(0.95);
@@ -78,7 +72,6 @@ section {
   border-bottom: 0.1rem solid white;
   color: white;
 }
-
 .heading span {
   color: var(--c2);
 }
@@ -97,7 +90,6 @@ header {
   flex-flow: column;
   text-align: center;
 }
-
 header .photo-header img {
   height: 17rem;
   width: 17rem;
@@ -106,26 +98,21 @@ header .photo-header img {
   border-bottom: 1rem;
   border: 0.7rem solid var(--c2);
 }
-
 header .photo-header .name-header {
   font-size: 3.5rem;
   color: white;
 }
-
 header .photo-header .text-header {
   font-size: 2rem;
   color: white;
 }
-
 header .nav-bar {
   width: 100%;
 }
-
 header .nav-bar ul {
   list-style: none;
   padding: 1rem 3rem;
 }
-
 header .nav-bar ul li a {
   display: block;
   padding: 1rem;
@@ -135,7 +122,6 @@ header .nav-bar ul li a {
   font-size: 2rem;
   border-radius: 5rem;
 }
-
 header .nav-bar ul li a:hover {
   background: var(--c2);
   transform: scale(0.95);
@@ -161,21 +147,17 @@ header .nav-bar ul li a:hover {
   justify-content: center;
   padding: 0rem 15rem;
 }
-
 .home h3 {
   font-size: 2.5rem;
   color: var(--c2);
 }
-
 .home h1 {
   font-size: 5rem;
   color: white;
 }
-
 .home span {
   color: var(--c1);
 }
-
 .home p {
   font-size: 2rem;
   color: white;
@@ -189,32 +171,27 @@ header .nav-bar ul li a:hover {
   flex-wrap: wrap;
   padding: 1rem 0rem;
 }
-
 .sobreMim .row .info {
   flex: 1 1 48rem;
   padding: 2rem 1rem;
   padding-left: 6rem;
 }
-
 .sobreMim .row .info h3 {
   font-size: 2rem;
   color: var(--c1);
   padding: 1rem 0;
   font-weight: normal;
 }
-
 .sobreMim .row .info span {
   color: var(--c2);
   padding: 0 0.5rem;
 }
-
 .sobreMim .row .counter {
   flex: 1 1 48rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .sobreMim .row .counter .box {
   width: 20rem;
   background: var(--c1);
@@ -222,12 +199,10 @@ header .nav-bar ul li a:hover {
   padding: 2rem;
   margin: 2rem;
 }
-
 .sobreMim .row .counter .box span {
   font-size: 4rem;
   color: var(--c2);
 }
-
 .sobreMim .row .counter .box h3 {
   font-size: 2rem;
   color: white;
@@ -240,7 +215,6 @@ header .nav-bar ul li a:hover {
   flex-wrap: wrap;
   padding: 2rem 0;
 }
-
 .projetos .box-container .box {
   width: 20rem;
   height: 26rem;
@@ -248,12 +222,10 @@ header .nav-bar ul li a:hover {
   overflow: hidden;
   cursor: pointer;
 }
-
 .projetos .box-container .box img {
   width: 100%;
   object-fit: cover;
 }
-
 .projetos .box-container .box:hover img {
   transform: scale(1.2);
 }
@@ -264,20 +236,17 @@ header .nav-bar ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .contato .row .content {
   flex: 1 1 30rem;
   padding: 4rem;
   margin-bottom: 0rem;
 }
-
 .contato .row form {
   flex: 1 1 30rem;
   padding: 2rem;
   margin: 2rem;
   margin-bottom: 4rem;
 }
-
 .contato .row form .box {
   padding: 1.5rem;
   margin: 1rem 0;
@@ -287,11 +256,9 @@ header .nav-bar ul li a:hover {
   font-size: 1.7rem;
   width: 100%;
 }
-
 .contato .row form .box::placeholder {
   text-transform: capitalize;
 }
-
 .contato .row form .textArea {
   padding: 1.5rem;
   margin: 1rem 0;
@@ -303,22 +270,18 @@ header .nav-bar ul li a:hover {
   height: 15rem;
   resize: none;
 }
-
 .contato .row .content .title {
   color: white;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
-
 .contato .row .content .title span {
   color: var(--c2);
 }
-
 .contato .row .content .info h3 {
   display: flex;
   align-items: center;
 }
-
 .contato .row .content .info h3 a {
   text-decoration: none;
   color: white;
@@ -326,8 +289,7 @@ header .nav-bar ul li a:hover {
   padding: 1rem 0;
   font-weight: normal;
 }
-
-.contato .row .content .info i {
+.contato .row .content .info h3 i {
   padding-right: 1rem;
   color: var(--c1);
   font-size: 3rem;
