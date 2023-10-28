@@ -1,5 +1,5 @@
-#Portfolio
+# Portfolio
 
-##Como usar?
+## Como usar?
 
 https://gustavocorreiadev.github.io/portfolio/
