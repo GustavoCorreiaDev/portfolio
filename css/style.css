@@ -162,6 +162,7 @@ header .nav-bar ul li a:hover {
   font-size: 2rem;
   color: white;
   padding: 1rem 0;
+  text-align: justify;
 }
 
 .sobreMim .row {
