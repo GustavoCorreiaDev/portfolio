@@ -40,11 +40,11 @@
 
     <div class="fa-solid fa-bars" id="i-menu"></div><!--icon hamburguer-->
 
-    <section class="home" id="home"><!--home section-->
+    <section class="home" id="home"> <!--home section-->
 
         <h3>Hey SUP!</h3>
         <h1>I am <span>Gustavo Correia</span></h1>
-        <p>I'm a fullstack developer with experience in HTML | CSS | JavaScript | SCSS | Bootstrap | Tailwind | TypeScript | React | Next.js | PHP | Node.js | Express | MongoDB | Git | GitHub | APIs | AJAX | CRUD | MVC | Postman | JSON. I possess a understanding of AWS fundamentals, effective communication, proactive problem-solving, empathy, customer focus, teamwork, and delivering agile and efficient support. My clear and concise communication skills enhance my ability to collaborate and meet client needs effectively.</p>
+        <p data-aos="fade-down">I'm a fullstack developer with experience in HTML | CSS | JavaScript | Bootstrap | React.js | Next.js | PHP | Node.js | Git | GitHub | APIs | AJAX | CRUD | MVC | Postman | JSON. I possess a understanding of AWS fundamentals, effective communication, proactive problem-solving, empathy, customer focus, teamwork, and delivering agile and efficient support. My clear and concise communication skills enhance my ability to collaborate and meet client needs effectively.</p>
         <a href="#sobreMim"><button class="btn">About me <i class="fa- solid fas fa-user-check"></i></button></a>
 
     </section><!--home section-->
@@ -57,8 +57,8 @@
 
             <div class="info">
                 <h3><i class="fa-solid fa-signature"></i> <span>Name:</span>Gustavo Correia</h3>
-                <h3><i class="fa-solid fa-book"></i> <span>Age:</span>31</h3>
-                <h3><i class="fa-solid fa-user-graduate"></i> <span>Education:</span>Completed Higher Education and Postgraduate Degree</h3>
+                <h3><i class="fa-solid fa-book"></i> <span>Age:</span>32</h3>
+                <h3><i class="fa-solid fa-user-graduate"></i> <span>Education:</span>Postgraduate Degree</h3>
                 <h3><i class="fa-sharp fa-solid fa-code"></i> <span>Developer:</span>Fullstack</h3>
                 <h3><i class="fa-solid fa-language"></i> <span>Language:</span>Portuguese and English</h3>
                 <a href="./images/cv.correia.pdf" target="_blank"><button class="btn"> <i class="fa-solid fa-file-arrow-down"></i>DOWNLOAD CV</button></a>
@@ -118,18 +118,18 @@
                     <h3> <i class="fa-solid fa-envelope"></i> <a href="mailto:gustavocorreiadev@outlook.com" target="_blank">gustavocorreiadev@outlook.com</a> </h3>
                     <h3> <i class="fa-brands fa-square-github"></i> <a href="https://github.com/GustavoCorreiaDev" target="_blank">/GustavoCorreiaDev</a></h3>
                     <h3> <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/gustavocorreiadev/" target="_blank"> in/gustavocorreiadev</a></h3>
-                    <h3> <i class="fa-solid fa-mobile"></i> <a href="tel:+5579988712751" target="_blank">+55 (79) 9 8871-2751</a> </h3>
+                    <h3> <i class="fa-solid fa-mobile"></i><a href="https://api.whatsapp.com/send?phone=351914952511&text=Hello%20dear,%20are%20you%20a%20web%20developer?" class="btn-whatsapp" target="_blank"> Cellphone </a> </h3>
                     <h3> <i class="fa-solid fa-map-pin"></i><a href="https://www.google.com.br/maps/place/Guimar%C3%A3es,+Portugal/@41.4603408,-8.3894673,12z/data=!3m1!4b1!4m6!3m5!1s0xd24f0191ff06bb3:0x53e284e8981c154a!8m2!3d41.44253!4d-8.2917857!16zL20vMDMybnpy?entry=ttu" target="_blank"> Guimarães - BRAGA - Portugal</a> </h3>
                 </div>
 
             </div>
             
-            <form action="#">
-                <input type="text" placeholder="nome" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="textArea" placeholder="Envie uma mensagem!"></textarea>
-                <button type="submit" class="btn">SEND<span><i class="fa-regular fa-paper-plane"></i></span> </button>
+            <form id="contact-form" action="mailto:gustavocorreiadev@outlook.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Name" class="box" required>
+                <input type="email" name="email" placeholder="Email" class="box" required>
+                <input type="text" name="project" placeholder="Project" class="box">
+                <textarea name="message" cols="30" rows="10" class="textArea" placeholder="Send me a message" required></textarea>
+                <button type="button" class="btn" onclick="sendAndClearForm()">SEND<span><i class="fa-regular fa-paper-plane"></i></span> </button>
             </form>
 
         </div>
@@ -160,7 +160,8 @@
     <!--jQuerry-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-     <!--Javascript-->
+    <!--script-->
     <script src="js/script.js"></script>
+
 </body>
 </html>
